@@ -23,10 +23,10 @@
         </Menu>
         <DataGrid Name="flightListDG" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" AutoGenerateColumns="False" Height="Auto" Width="Auto">
             <DataGrid.Columns >
-                <DataGridTextColumn Header = "Рейс" Binding = "{Binding number}" Width="Auto"/>
-                <DataGridTextColumn Header = "Місто прильоту" Binding = "{Binding city}" Width="Auto"/>
-                <DataGridTextColumn Header = "Час вильоту" Binding = "{Binding depature_time}" Width="Auto"/>
-                <DataGridTextColumn Header = "Вільних місць" Binding = "{Binding free_seats}" Width="Auto"/>
+                <DataGridTextColumn Header = "Рейс" Binding = "{Binding Number}" Width="Auto"/>
+                <DataGridTextColumn Header = "Місто прильоту" Binding = "{Binding City}" Width="Auto"/>
+                <DataGridTextColumn Header = "Час вильоту" Binding = "{Binding Depature_time}" Width="Auto"/>
+                <DataGridTextColumn Header = "Вільних місць" Binding = "{Binding Free_seats}" Width="Auto"/>
             </DataGrid.Columns >
         </DataGrid>
     </Grid>
