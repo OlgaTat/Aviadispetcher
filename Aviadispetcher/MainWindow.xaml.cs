@@ -57,7 +57,7 @@ namespace Aviadispetcher
                 }
                 reader.Close();
                 //передача колекції рейсів у DataGrid 
-                flightListDG.ItemsSource = fList;
+                FlightListDG.ItemsSource = fList;
             }
             catch (Exception ex)
             {
@@ -82,20 +82,11 @@ namespace Aviadispetcher
         {
             //читання даних із БД
             OpenDbFile();
-            ////зміна розміру форми
-            //FormResize();
         }
-
-        private void FormResize()
-        {
-            //зміна розмірів форми під розміри DataGrid
-            this.Width = flightListDG.Margin.Left + flightListDG.RenderSize.Width + 50;
-            Height = flightListDG.Margin.Top + flightListDG.RenderSize.Height + 50;
-        }
-
+            
         /// <summary>
         /// виклик головного меню Файл-Завантажити
-        /// виконує очистку flightListDG (DataGrid) від даних та
+        /// виконує очистку FlightListDG (DataGrid) від даних та
         /// завантажує у нього дані із БД aviadispetcher.sql
         /// </summary>
         private void LoadDataMenuItem_Click(object sender, RoutedEventArgs e)
@@ -103,7 +94,7 @@ namespace Aviadispetcher
             //очищення DataGrid
             try
             {
-                flightListDG.ItemsSource = null;
+                FlightListDG.ItemsSource = null;
                 fList.Clear();
             }
             catch (Exception ex)
@@ -113,8 +104,6 @@ namespace Aviadispetcher
             }
             //читання даних із БД
             OpenDbFile();
-            ////зміна розміру форми
-            //FormResize();
         }
     }
 }

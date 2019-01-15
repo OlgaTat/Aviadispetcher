@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Aviadispetcher"
         mc:Ignorable="d"
         Title="Інформація про рейси" Height="Auto" Width="Auto" Loaded="InfoFlightForm_Loaded" Icon="Airplane.ico" SizeToContent="WidthAndHeight" >
     <Grid>
@@ -21,7 +20,7 @@
                 <MenuItem Name="SelectXYMenuItem" Header="За часом вильоту" />
             </MenuItem>
         </Menu>
-        <DataGrid Name="flightListDG" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" AutoGenerateColumns="False" Height="Auto" Width="Auto">
+        <DataGrid x:Name="FlightListDG" HorizontalAlignment="Left" Margin="5,30,5,10" VerticalAlignment="Top" AutoGenerateColumns="False" Height="Auto" Width="Auto">
             <DataGrid.Columns >
                 <DataGridTextColumn Header = "Рейс" Binding = "{Binding Number}" Width="Auto"/>
                 <DataGridTextColumn Header = "Місто прильоту" Binding = "{Binding City}" Width="Auto"/>
