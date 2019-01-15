@@ -28,13 +28,13 @@ namespace Aviadispetcher
         }
 
         /// <summary>
-        /// Відкриття файлу БД зі списком рейсів.
+        /// відкриття файлу БД зі списком рейсів
         /// </summary>
         private void OpenDbFile()
         {
             try
             {
-                //Рядок з'єднання з БД.
+                //рядок з'єднання з БД
                 string connStr = "Server = localhost; Database = aviadispetcher; Uid = root; Pwd = ;";
                 //змінні для роботи із MySQL
                 MySqlConnection conn = new MySqlConnection(connStr);
