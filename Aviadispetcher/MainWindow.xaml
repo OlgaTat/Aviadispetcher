@@ -29,5 +29,15 @@
                 <DataGridTextColumn Header = "Вільних місць" Binding = "{Binding Free_seats}" Width="Auto"/>
             </DataGrid.Columns >
         </DataGrid>
+        <GroupBox Header="Дані рейсу" HorizontalAlignment="Left" Margin="350,70,0,0"
+                  VerticalAlignment="Top" Height="236" Width="263">
+            <Grid HorizontalAlignment="Left" Height="226" VerticalAlignment="Top"
+                  Width="253" Margin="0,0,-2,-12">
+                <Label Content="Номер рейсу"
+                       HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>                
+                <TextBox x:Name="numFlightTextBox" Text="LL-000" 
+                       HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" VerticalAlignment="Top" Width="50"/>
+            </Grid>
+        </GroupBox>
     </Grid>
 </Window>

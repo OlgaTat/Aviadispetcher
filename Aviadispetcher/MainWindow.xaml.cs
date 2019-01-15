@@ -85,6 +85,8 @@ namespace Aviadispetcher
             //зміна розмірів форми під розміри DataGrid
             this.Width = flightListDG.Margin.Left+ flightListDG.RenderSize.Width+50;
             this.Height = flightListDG.Margin.Top + flightListDG.RenderSize.Height + 50;
+
+            numFlightTextBox.Text = "";
         }
 
         /// <summary>
