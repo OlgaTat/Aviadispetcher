@@ -82,9 +82,15 @@ namespace Aviadispetcher
         {
             //читання даних із БД
             OpenDbFile();
+            ////зміна розміру форми
+            //FormResize();
+        }
+
+        private void FormResize()
+        {
             //зміна розмірів форми під розміри DataGrid
-            this.Width = flightListDG.Margin.Left+ flightListDG.RenderSize.Width+50;
-            this.Height = flightListDG.Margin.Top + flightListDG.RenderSize.Height + 50;
+            this.Width = flightListDG.Margin.Left + flightListDG.RenderSize.Width + 50;
+            Height = flightListDG.Margin.Top + flightListDG.RenderSize.Height + 50;
         }
 
         /// <summary>
@@ -107,6 +113,8 @@ namespace Aviadispetcher
             }
             //читання даних із БД
             OpenDbFile();
+            ////зміна розміру форми
+            //FormResize();
         }
     }
 }

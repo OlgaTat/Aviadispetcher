@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aviadispetcher"
         mc:Ignorable="d"
-        Title="Інформація про рейси" Height="Auto" Width="Auto" Loaded="InfoFlightForm_Loaded" Icon="Airplane.ico" >
+        Title="Інформація про рейси" Height="Auto" Width="Auto" Loaded="InfoFlightForm_Loaded" Icon="Airplane.ico" SizeToContent="WidthAndHeight" >
     <Grid>
         <Menu Height="23" HorizontalAlignment="Left" Name="mainMenu" VerticalAlignment="Top" Width="Auto">
             <MenuItem Header="Файл" >
